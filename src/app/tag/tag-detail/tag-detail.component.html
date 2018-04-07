@@ -1,0 +1,13 @@
+<h1 class="section-title">{{'tagDetail' | translate}}</h1>
+<mat-progress-spinner *ngIf="!tag"
+                      class="progress-spinner"
+                      [color]="'primary'"
+                      [mode]="'indeterminate'">
+</mat-progress-spinner>
+<div id="tag-detail" *ngIf="tag">
+    <ng-container>
+        <mat-card class="tag-card">
+            
+        </mat-card>
+    </ng-container>
+</div>

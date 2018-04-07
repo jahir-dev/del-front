@@ -1,0 +1,17 @@
+<div id="left">
+    <h2 class="section-title">{{ 'ReponsesList' | translate }}</h2>
+    <div>
+        <mat-progress-spinner *ngIf="!reponses"
+                              class="progress-spinner"
+                              [color]="'primary'"
+                              [mode]="'indeterminate'">
+        </mat-progress-spinner>
+        <mat-list>
+            <mat-list-item *ngFor="let reponse of reponses">
+
+            </mat-list-item>
+        </mat-list>
+    </div>
+</div>
+
+<div class="clear"></div>

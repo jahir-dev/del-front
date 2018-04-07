@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><title>Online Doctor</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="Style/style.css">
+<link rel="shortcut icon" type="image/png"href="assets/images/img/ico.png"/>
+<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet"/>
+<body>
+
+<!-- Navbar -->
+<div class="top">
+ <div class="bar theme-d left-align large">
+  <a class="bar-item button hide-medium hide-large right padding-large hover-white large theme-d" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  <a href="#" class="bar-item button padding-large theme-d"><i class="fa fa-home margin-right"></i>Online Doctor</a>
+  <a href="msg.html" class="bar-item button hide-small padding-large hover-white" title="Messages"><i class="fa fa-envelope"></i></a>
+  <div class="dropdown-hover hide-small">
+    <button class="button padding-large" title="Notifications"><i class="fa fa-bell"></i><span class="badge right small green">2</span></button>
+    <div class="dropdown-content card-4 bar-block" style="width:300px">
+      <a href="#" class="bar-item button">Dr.x commented your post</a>
+        <a href="#" class="bar-item button">Dr.y commented your post</a>
+    </div>
+  </div>
+  <a href="#" class="bar-item button hide-small right padding-large hover-white" title="My Account">
+    <img src="assets/images/img/avatar.png" class="circle" style="height:23px;width:23px" alt="Avatar">
+  </a>
+ </div>
+</div>
+
+<!-- Navbar on small screens -->
+<div id="navDemo" class="bar-block theme-d hide hide-large hide-medium large">
+  <a href="#" class="bar-item button padding-large">Link 1</a>
+  <a href="#" class="bar-item button padding-large">Notifications</a>
+  <a href="msg.html" class="bar-item button padding-large">Messages</a>
+  <a href="#" class="bar-item button padding-large">My Profile</a>
+</div>
+
+<!-- Page Container -->
+<div class="container content" style="max-width:1400px;margin-top:80px">
+  <!-- The Grid -->
+  <div class="row">
+    <!-- Left Column -->
+    <div class="col m3">
+      <!-- Profile -->
+      <div class="card round white">
+        <div class="container">
+         <h4 class="center">user name</h4>
+         <p class="center"><img src="assets/images/img/avatar.png" class="circle" style="height:106px;width:106px" alt="Avatar"></p>
+         <hr>
+         <p><i class="fa fa-home fa-fw margin-right text-theme"></i> Tunis, Tunisia</p>
+         <p><i class="fa fa-birthday-cake fa-fw margin-right text-theme"></i> June 14, 1994</p>
+        </div>
+      </div>
+      <br>
+
+
+    <!-- End Left Column -->
+    </div>
+
+    <!-- Middle Column -->
+    <div class="col m9">
+
+      <div class="row-padding">
+        <div class="col m12">
+          <div class="card round white">
+            <div class="container padding">
+              <h6 class="opacity">who are you feeling today ? </h6>
+              <p contenteditable="true" class="border padding">Status: Feeling ... </p>
+              <button type="button" class="button theme"><i class="fas fa-pencil-alt"></i> &nbsp;Post</button>
+
+              <label class="fileContainer button theme">
+                  <i class="far fa-images"></i> add photos
+                  <input type="file" name="pic" accept="image/*"/>
+              </label>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container card white round margin"><br>
+        <img src="assets/images/img/avatar.png" alt="Avatar" class="left circle margin-right" style="width:60px">
+        <span class="right opacity">1 min</span>
+        <h4>Rayda Mehez</h4><br>
+        <hr class="clear">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <div class="row-padding" style="margin:0 -16px">
+            <div class="half">
+              <img src="assets/images/img/2.jpg" style="width:100%" alt="Northern Lights" class="margin-bottom">
+            </div>
+            <div class="half">
+              <img src="assets/images/img/1.jpg" style="width:100%" alt="Nature" class="margin-bottom">
+          </div>
+        </div>
+        <button type="button" class="button theme-d margin-bottom"><i class="fa fa-comment"></i> &nbsp;Comment</button>
+      </div>
+
+      <div class="container card white round margin"><br>
+        <img src="assets/images/img/avatar.png" alt="Avatar" class="left circle margin-right" style="width:60px">
+        <span class="right opacity">16 min</span>
+        <h4>Lamia Alwi</h4><br>
+        <hr class="clear">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <button type="button" class="button theme-d margin-bottom"><i class="fa fa-comment"></i> &nbsp;Comment</button>
+      </div>
+
+      <div class="container card white round margin"><br>
+        <img src="assets/images/img/avatar.png" alt="Avatar" class="left circle margin-right" style="width:60px">
+        <span class="right opacity">32 min</span>
+        <h4>Nabil Jahir</h4><br>
+        <hr class="clear">
+        <p>???</p>
+        <img src="assets/images/img/3.jpg" style="width:100%" class="margin-bottom">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <button type="button" class="button theme-d margin-bottom"><i class="fa fa-comment"></i> &nbsp;Comment</button>
+      </div>
+
+    <!-- End Middle Column -->
+    </div>
+
+
+    </div>
+
+  <!-- End Grid -->
+  </div>
+
+<!-- End Page Container -->
+</div>
+<br>
+
+
+<footer>&copy; 2018 online doctor</footer>
+
+<script>
+// Accordion
+function myFunction(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("show") == -1) {
+        x.className += " show";
+        x.previousElementSibling.className += " theme-d";
+    } else {
+        x.className = x.className.replace("show", "");
+        x.previousElementSibling.className =
+        x.previousElementSibling.className.replace(" theme-d", "");
+    }
+}
+
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("show") == -1) {
+        x.className += " show";
+    } else {
+        x.className = x.className.replace(" show", "");
+    }
+}
+</script>
+
+</body>
+</html>

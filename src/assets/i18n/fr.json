@@ -1,0 +1,47 @@
+{
+  "home": "accueil",
+  "heroesList": "lites des tags",
+  "angularExampleApp": "docteur en ligne",
+  "language": "Language",
+  "orange": "Orange",
+  "yellow": "Yellow",
+  "cyan": "Cyan",
+  "name": "Nom",
+  "nameRequired": "liblle est vide",
+  "hero-top": {
+    "title": "les tags"
+  },
+  "hero-create-new": {
+    "newHero": "nouveau tag"
+  },
+
+  "details": "details",
+  "saveHero": "ajouter un tag",
+  "createNewHero": "Créer un tag",
+  "alert": "Alert",
+  "sureRemoveHero": "voulez-vous supprimer ce tag?",
+  "cancel": "annuler",
+  "remove": "supprimer",
+  "findHero": "chercher un tag",
+  "back": "précedent",
+  "noHero": "pas de tag!",
+  "heroDuplicated": "tag déja existe",
+  "saved": "enregisté!",
+  "canVote": "Can vote :)",
+  "cannotVote": "Cannot vote anymore :(",
+  "createHero": "tag est créé",
+  "realName": "vrais libelle",
+  "create": "ajouter",
+  "realNameRequired": "Real name is required",
+  "errorHasOcurred": "An error has ocurred",
+  "heroCreated": "tag ajouté avec suuccés!",
+  "removeHero": "supprimer le tag",
+  "areYouSure": "vous-etes sur?",
+  "no": "Non",
+  "yes": "Oui",
+  "heroRemoved": " tag est supprimé:(",
+  "heroDetail": "détailles de tag",
+  "error404": "404 Erreur",
+  "mayTheForce": "👻que la force soit avec toi toujours 😊",
+  "updateBrowser": "You are using an old browser, please update it and reload the page."
+}

@@ -1,0 +1,56 @@
+<div id="right">
+    <h2 class="section-title">{{ 'creer un tag' | translate }}</h2>
+    <div>
+        <form [formGroup]="newTagForm" #form="ngForm" (ngSubmit)="createNewTag(newTagForm.value)">
+            <mat-input-container class="input-container">
+                <input matInput type="text"
+                       placeholder="{{'libelle' | translate}}"
+                       formControlName="name">
+            </mat-input-container>
+
+            <mat-input-container class="input-container">
+                <input matInput type="text"
+                       placeholder="{{'realName' | translate}}"
+                       formControlName="alterEgo">
+            </mat-input-container>
+
+            <button mat-raised-button type="submit" [disabled]="!newTagForm.valid">
+                {{'create' | translate}}
+            </button>
+
+            <div *ngIf="error">{{error | translate}}</div>
+        </form>
+    </div>
+</div>
+<div class="clear"></div>
+<div id="left">
+    <h2 class="section-title">{{ 'la liste des tags' | translate }}</h2>
+    <div>
+        <mat-progress-spinner *ngIf="!tags"
+                              class="progress-spinner"
+                              [color]="'primary'"
+                              [mode]="'indeterminate'">
+        </mat-progress-spinner>
+
+        <mat-list>
+            <mat-list-item *ngFor="let tag of tags">
+                <img *ngIf="tag.default" class="cp"
+                (click)="seeTagDetails(tag);" mat-list-avatar
+                src="assets/images/heroes/{{tag.id}}-thumbnail.jpg">
+           <img *ngIf="!tag.default"
+                (click)="seeTagDetails(tag);" mat-list-avatar src="assets/images/heroes/default.png">
+           <h3 mat-line [ngClass]="{'cp': tag.default}" (click)="seeTagDetails(tag);"> {{tag.label}} </h3>
+           <p mat-line [ngClass]="{'cp': tag.default}" (click)="seeTagDetails(tag);">
+               <span>{{tag.id}}</span>
+           </p>
+           <div class="hero-actions">
+              
+               <mat-icon class="remove-icon" *ngIf="!tag.default"
+                         (click)="remove(tag);">
+                   supprimer
+               </mat-icon>
+           </div>
+       </mat-list-item>
+   </mat-list>
+</div>
+</div>

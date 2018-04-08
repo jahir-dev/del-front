@@ -1,6 +1,6 @@
 import {Component} from '@angular/core';
 import {Reponse} from '../shared/reponse.model';
-import {ReponseService} from '../shared/Reponse.service';
+import {ReponseService} from '../shared/reponse.service';
 import {ActivatedRoute} from '@angular/router';
 
 @Component({

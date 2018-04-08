@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-tag',
-  templateUrl: './tag.component.html' 
+  templateUrl: './tag.component.html'
 })
 export class TagComponent  {
 

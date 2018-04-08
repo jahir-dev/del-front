@@ -9,7 +9,7 @@ import {Error404Component} from './core/error404/error-404.component';
 
 const routes: Routes = [
   {path: '', redirectTo: '/', pathMatch: 'full'},
-  //{path: '', component: HeroTopComponent},
+  // {path: '', component: HeroTopComponent},
    {path: AppConfig.routes.heroes, loadChildren: 'app/heroes/heroes.module#HeroesModule'},
    {path: AppConfig.routes.tags, loadChildren: 'app/tag/tag.module#TagModule'},
    {path: AppConfig.routes.specialites, loadChildren: 'app/specialites/specialites.module#SpecialitesModule'},

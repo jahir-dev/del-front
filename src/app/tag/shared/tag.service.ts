@@ -54,8 +54,7 @@ export class TagService {
     createTag(tag: any): Observable<Tag> {
     return this.http
       .post(this.tagsUrl, JSON.stringify({
-        name: tag.label,
-        alterEgo: tag.alterEgo
+        label: tag.label,
       }), {headers: this.headers})
       .map(response => {
         this.showSnackBar('tag est créé');
@@ -64,7 +63,7 @@ export class TagService {
       .catch(error => this.handleError(error));
   }
   updateTag (tag: Tag): Observable<any> {
-  return this.http.put(this.tagsUrl, tag, {headers: this.headers})
+  return this.http.put(this.tagsUrl + '/' + tag.id, tag, {headers: this.headers})
     .map((response) => {
         this.showSnackBar('tag est modifié');
         return response;
@@ -73,6 +72,7 @@ export class TagService {
   }
 
 deleteTagById(id: any): Observable<Array<Tag>> {
+  console.log('dans le service methode deleteTagById');
     const url = `${this.tagsUrl}/${id}`;
     return this.http.delete(url, {headers: this.headers})
       .map((response) => {

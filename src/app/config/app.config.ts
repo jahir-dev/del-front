@@ -15,7 +15,7 @@ export const AppConfig: IAppConfig = {
   },
   endpoints: {
     heroes: 'https://nodejs-example-app.herokuapp.com/heroes',
-     tags:   'http://localhost:3080/tags',
+     tags:   'http://localhost:8000/api/tags',
      posts:   'http://localhost:3080/posts',
      reponses:   'http://localhost:3080/reponses',
      specialites: 'http://localhost:3080/specialites'

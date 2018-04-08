@@ -4,10 +4,13 @@
                       [color]="'primary'"
                       [mode]="'indeterminate'">
 </mat-progress-spinner>
-<div id="tag-detail" *ngIf="tag">
+<div id="tag-detail" *ngIf="tag; else noContent">
     <ng-container>
         <mat-card class="tag-card">
-            
+            <span>Id : {{ tag.id }}</span><br>
+            <span>Label : <input type="text" [(ngModel)]="tag.label" value="{{ tag.label }}"/></span>
         </mat-card>
+        <button (click)="updateTag()">modifier</button>
     </ng-container>
 </div>
+<ng-template #noContent> Pas de Tag</ng-template>
